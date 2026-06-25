@@ -1,0 +1,11 @@
+paragraph = input("enter a paragraph")
+paragraph1 = len(paragraph)
+words = paragraph.split()
+clean_words = [word.strip(".,!?") for word in words]
+longest_word = max(clean_words, key=len)
+word_count = len(clean_words)
+print(paragraph1)
+print(longest_word)
+vowels = "aeiouAEIOU"
+vowel_count = sum(paragraph.count(vowel) for vowel in vowels)
+print(vowel_count)
